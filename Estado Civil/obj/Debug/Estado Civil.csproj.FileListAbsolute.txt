@@ -1,0 +1,10 @@
+C:\Users\Estudiante\Desktop\Ejercicios clase\Estado Civil\bin\Debug\Estado Civil.exe.config
+C:\Users\Estudiante\Desktop\Ejercicios clase\Estado Civil\bin\Debug\Estado Civil.exe
+C:\Users\Estudiante\Desktop\Ejercicios clase\Estado Civil\bin\Debug\Estado Civil.pdb
+C:\Users\Estudiante\Desktop\Ejercicios clase\Estado Civil\obj\Debug\Estado Civil.csproj.AssemblyReference.cache
+C:\Users\Estudiante\Desktop\Ejercicios clase\Estado Civil\obj\Debug\Estado_Civil.Form1.resources
+C:\Users\Estudiante\Desktop\Ejercicios clase\Estado Civil\obj\Debug\Estado_Civil.Properties.Resources.resources
+C:\Users\Estudiante\Desktop\Ejercicios clase\Estado Civil\obj\Debug\Estado Civil.csproj.GenerateResource.cache
+C:\Users\Estudiante\Desktop\Ejercicios clase\Estado Civil\obj\Debug\Estado Civil.csproj.CoreCompileInputs.cache
+C:\Users\Estudiante\Desktop\Ejercicios clase\Estado Civil\obj\Debug\Estado Civil.exe
+C:\Users\Estudiante\Desktop\Ejercicios clase\Estado Civil\obj\Debug\Estado Civil.pdb

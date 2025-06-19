@@ -1,0 +1,10 @@
+C:\Users\Estudiante\Desktop\Ejercicios clase\Descuento\bin\Debug\Descuento.exe.config
+C:\Users\Estudiante\Desktop\Ejercicios clase\Descuento\bin\Debug\Descuento.exe
+C:\Users\Estudiante\Desktop\Ejercicios clase\Descuento\bin\Debug\Descuento.pdb
+C:\Users\Estudiante\Desktop\Ejercicios clase\Descuento\obj\Debug\Descuento.csproj.AssemblyReference.cache
+C:\Users\Estudiante\Desktop\Ejercicios clase\Descuento\obj\Debug\Descuento.Form1.resources
+C:\Users\Estudiante\Desktop\Ejercicios clase\Descuento\obj\Debug\Descuento.Properties.Resources.resources
+C:\Users\Estudiante\Desktop\Ejercicios clase\Descuento\obj\Debug\Descuento.csproj.GenerateResource.cache
+C:\Users\Estudiante\Desktop\Ejercicios clase\Descuento\obj\Debug\Descuento.csproj.CoreCompileInputs.cache
+C:\Users\Estudiante\Desktop\Ejercicios clase\Descuento\obj\Debug\Descuento.exe
+C:\Users\Estudiante\Desktop\Ejercicios clase\Descuento\obj\Debug\Descuento.pdb
