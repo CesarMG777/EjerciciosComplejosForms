@@ -33,16 +33,17 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rtnPiedra = new System.Windows.Forms.RadioButton();
-            this.rtnPapel = new System.Windows.Forms.RadioButton();
             this.rtnTijeras = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
+            this.rtnPapel = new System.Windows.Forms.RadioButton();
+            this.rtnPiedra = new System.Windows.Forms.RadioButton();
+            this.btnLets = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rtnBotPiedra = new System.Windows.Forms.RadioButton();
-            this.rtnBotPapel = new System.Windows.Forms.RadioButton();
             this.rtnBotTijeras = new System.Windows.Forms.RadioButton();
+            this.rtnBotPapel = new System.Windows.Forms.RadioButton();
+            this.rtnBotPiedra = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblGanador = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -99,16 +100,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Jugador 1";
             // 
-            // rtnPiedra
+            // rtnTijeras
             // 
-            this.rtnPiedra.AutoSize = true;
-            this.rtnPiedra.Location = new System.Drawing.Point(36, 34);
-            this.rtnPiedra.Name = "rtnPiedra";
-            this.rtnPiedra.Size = new System.Drawing.Size(61, 17);
-            this.rtnPiedra.TabIndex = 0;
-            this.rtnPiedra.TabStop = true;
-            this.rtnPiedra.Text = "Piedra";
-            this.rtnPiedra.UseVisualStyleBackColor = true;
+            this.rtnTijeras.AutoSize = true;
+            this.rtnTijeras.Location = new System.Drawing.Point(36, 194);
+            this.rtnTijeras.Name = "rtnTijeras";
+            this.rtnTijeras.Size = new System.Drawing.Size(63, 17);
+            this.rtnTijeras.TabIndex = 2;
+            this.rtnTijeras.TabStop = true;
+            this.rtnTijeras.Text = "Tijeras";
+            this.rtnTijeras.UseVisualStyleBackColor = true;
             // 
             // rtnPapel
             // 
@@ -121,34 +122,36 @@
             this.rtnPapel.Text = "Papel";
             this.rtnPapel.UseVisualStyleBackColor = true;
             // 
-            // rtnTijeras
+            // rtnPiedra
             // 
-            this.rtnTijeras.AutoSize = true;
-            this.rtnTijeras.Location = new System.Drawing.Point(36, 194);
-            this.rtnTijeras.Name = "rtnTijeras";
-            this.rtnTijeras.Size = new System.Drawing.Size(63, 17);
-            this.rtnTijeras.TabIndex = 2;
-            this.rtnTijeras.TabStop = true;
-            this.rtnTijeras.Text = "Tijeras";
-            this.rtnTijeras.UseVisualStyleBackColor = true;
+            this.rtnPiedra.AutoSize = true;
+            this.rtnPiedra.Location = new System.Drawing.Point(36, 34);
+            this.rtnPiedra.Name = "rtnPiedra";
+            this.rtnPiedra.Size = new System.Drawing.Size(61, 17);
+            this.rtnPiedra.TabIndex = 0;
+            this.rtnPiedra.TabStop = true;
+            this.rtnPiedra.Text = "Piedra";
+            this.rtnPiedra.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnLets
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button1.Location = new System.Drawing.Point(332, 336);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 53);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Jugar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnLets.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnLets.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLets.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnLets.Location = new System.Drawing.Point(332, 336);
+            this.btnLets.Name = "btnLets";
+            this.btnLets.Size = new System.Drawing.Size(100, 53);
+            this.btnLets.TabIndex = 3;
+            this.btnLets.Text = "Jugar";
+            this.btnLets.UseVisualStyleBackColor = false;
+            this.btnLets.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.rtnBotTijeras);
             this.groupBox2.Controls.Add(this.rtnBotPapel);
             this.groupBox2.Controls.Add(this.rtnBotPiedra);
+            this.groupBox2.Enabled = false;
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.Teal;
             this.groupBox2.Location = new System.Drawing.Point(514, 80);
@@ -157,28 +160,6 @@
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Bot";
-            // 
-            // rtnBotPiedra
-            // 
-            this.rtnBotPiedra.AutoSize = true;
-            this.rtnBotPiedra.Location = new System.Drawing.Point(47, 41);
-            this.rtnBotPiedra.Name = "rtnBotPiedra";
-            this.rtnBotPiedra.Size = new System.Drawing.Size(71, 20);
-            this.rtnBotPiedra.TabIndex = 0;
-            this.rtnBotPiedra.TabStop = true;
-            this.rtnBotPiedra.Text = "Piedra";
-            this.rtnBotPiedra.UseVisualStyleBackColor = true;
-            // 
-            // rtnBotPapel
-            // 
-            this.rtnBotPapel.AutoSize = true;
-            this.rtnBotPapel.Location = new System.Drawing.Point(47, 99);
-            this.rtnBotPapel.Name = "rtnBotPapel";
-            this.rtnBotPapel.Size = new System.Drawing.Size(66, 20);
-            this.rtnBotPapel.TabIndex = 1;
-            this.rtnBotPapel.TabStop = true;
-            this.rtnBotPapel.Text = "Papel";
-            this.rtnBotPapel.UseVisualStyleBackColor = true;
             // 
             // rtnBotTijeras
             // 
@@ -191,6 +172,28 @@
             this.rtnBotTijeras.Text = "Tijeras";
             this.rtnBotTijeras.UseVisualStyleBackColor = true;
             this.rtnBotTijeras.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            // 
+            // rtnBotPapel
+            // 
+            this.rtnBotPapel.AutoSize = true;
+            this.rtnBotPapel.Location = new System.Drawing.Point(47, 108);
+            this.rtnBotPapel.Name = "rtnBotPapel";
+            this.rtnBotPapel.Size = new System.Drawing.Size(66, 20);
+            this.rtnBotPapel.TabIndex = 1;
+            this.rtnBotPapel.TabStop = true;
+            this.rtnBotPapel.Text = "Papel";
+            this.rtnBotPapel.UseVisualStyleBackColor = true;
+            // 
+            // rtnBotPiedra
+            // 
+            this.rtnBotPiedra.AutoSize = true;
+            this.rtnBotPiedra.Location = new System.Drawing.Point(47, 41);
+            this.rtnBotPiedra.Name = "rtnBotPiedra";
+            this.rtnBotPiedra.Size = new System.Drawing.Size(71, 20);
+            this.rtnBotPiedra.TabIndex = 0;
+            this.rtnBotPiedra.TabStop = true;
+            this.rtnBotPiedra.Text = "Piedra";
+            this.rtnBotPiedra.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -211,16 +214,26 @@
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
+            // lblGanador
+            // 
+            this.lblGanador.AutoSize = true;
+            this.lblGanador.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblGanador.Location = new System.Drawing.Point(349, 239);
+            this.lblGanador.Name = "lblGanador";
+            this.lblGanador.Size = new System.Drawing.Size(0, 13);
+            this.lblGanador.TabIndex = 10;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblGanador);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnLets);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
@@ -248,13 +261,14 @@
         private System.Windows.Forms.RadioButton rtnTijeras;
         private System.Windows.Forms.RadioButton rtnPapel;
         private System.Windows.Forms.RadioButton rtnPiedra;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLets;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton rtnBotTijeras;
         private System.Windows.Forms.RadioButton rtnBotPapel;
         private System.Windows.Forms.RadioButton rtnBotPiedra;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblGanador;
     }
 }
 
